@@ -1,0 +1,322 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Indie+Flower&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+* {
+  box-sizing: border-box;
+  font-family: "Indie Flower", cursive;
+}
+
+.title {
+  text-align: center;
+  margin: 0;
+  font-size: 4em;
+  font-family: "Audiowide", sans-serif;
+  font-weight: normal;
+  color: white;
+}
+
+.title_large {
+  font-size: 8em;
+}
+
+html {
+  background-color: rgb(247, 195, 237);
+  background-image: url("pics/dtiYes.jpg");
+  background-blend-mode: multiply;
+}
+
+html, body {
+  margin: 0;
+  padding:0;
+}
+
+.nav ul { /*basically select the ul elements in the nav*/
+  margin: 0;
+}
+
+/* makes the navigation bar horizontal */
+.nav li {
+  display: inline;
+}
+
+.nav a {
+  display: inline-block;
+  padding: .5em;
+  color: rgb(234, 234, 234);
+  text-decoration: none;
+}
+
+/* makes nav bar responsive to user hover */
+.nav a:hover {
+  background-color: rgb(240, 154, 218);
+}
+
+/* centers the nav bar and makes it pretty */
+.main-nav {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: lighter;
+  border-bottom: 1px dashed rgb(240, 154, 218);
+}
+
+.main-nav li {
+  padding: 0 2%;
+}
+
+
+.grid {
+  margin: 3em;
+  display: grid;
+  place-items: bottom;
+  border-bottom: dashed rgb(148, 0, 111);
+}
+
+/* making the elements adapt to the expanding of the screen, places in center*/
+.container {
+  max-width: 900px;
+  margin: 3em auto;
+  padding: 0 1.5em;
+}
+
+
+.mainHeader {
+  background-color: rgba(0, 0, 0, .3);
+  background-image: url("pics/backGroundSecretCodes.jpeg");background-blend-mode: multiply;
+  background-size: cover;
+  padding-bottom: 100px;
+}
+
+.section-header {
+  font-family: "Audiowide";
+  text-align: center;
+  color:rgb(148, 0, 111);
+  font-size: 4em;
+}
+
+/* the lil description before each page */
+.section-header-description {
+  text-align: center;
+  color:rgb(255, 255, 255);
+  margin: 3em auto;
+  padding: 0 1.5em;
+  font-size: 1.4em;
+}
+
+.about-meP {
+  color: white;
+  font-size: 2em;
+}
+
+.about-me-pic {
+  float: left;
+  height: 500px;
+  min-width: fit-content;
+  margin: 15px;
+  border-radius: 50%;
+  border-style: dashed;
+  border-color: aquamarine;
+}
+
+.main-footer {
+  background-color: rgb(56, 187, 143);
+  color: white;
+  padding: .25em 0;
+}
+
+.main-footer-container {
+  display: flex;
+  align-items: center;
+}
+
+.main-footer-container ul {
+  flex-grow: 1;
+  text-align: end;
+
+}
+
+.footer-nav img {
+  width: 30px;
+  max-height: fit-content;
+}
+
+/* secret codes css -------------------------------------- */
+
+.secret-codes-pic {
+  float: left;
+  max-height: fit-content;
+  width: 200px;
+  margin: 15px;
+  border-radius: 50%;
+  border-style: dashed;
+  border-color: aquamarine;
+}
+
+.codeElement {
+  border-radius: 15px;
+}
+
+.btn {
+  text-align: center;
+  vertical-align: middle;
+  padding: .3em;
+  cursor: pointer;
+  color: white;
+  border: 2px dashed aquamarine;
+  background-color: rgba(255, 255, 255, .1);
+  border-radius: 30%;
+}
+
+/* all the buttons under secret code */
+.btn:hover {
+  background-color: rgb(240, 154, 218);
+}
+
+/* all the codes under secret codes */
+.grid strong {
+  font-family: "Audiowide";
+  font-size: 2em;
+  color:rgb(148, 0, 111);
+}
+
+.grid p {
+  color: white;
+  font-size: 1.4em;
+}
+
+.likeCounter {
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+  width: 30%;
+}
+
+.likeCounterDescription {
+  font-size: 2em;
+}
+
+.likeCounter strong {
+  font-size: 3em;
+}
+
+/* hall of fame css -------------------------------------*/
+
+.model-card {
+  margin: 30px;
+  background-color: rgb(253, 196, 255);
+  width: 850px;
+  height: 550px;
+  border-radius: 4%;
+}
+
+.model-card-title {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-family: "Audiowide";
+  font-weight: bold;
+  font-size: 2em;
+  color:rgb(148, 0, 111);
+  margin-bottom: 15px;
+}
+
+.HOFPics {
+  float: inline-start;
+  max-height: fit-content;
+  width: 300px;
+  margin: 15px;
+  border-radius: 50%;
+  border-style: dashed;
+  border-color: aquamarine;
+  
+}
+
+.model-card-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+}
+
+.model-card-description {
+  flex-grow: 1; 
+  /* flex grow 1 so element can take up as much width as possible */
+  color: white;
+  font-size: 1.8em;
+}
+
+/* lets make it responsive for diff screens */
+.model-cards {
+  display: flex;
+  /* everything in one line */
+  flex-wrap: wrap;
+  /* to make everything flow down */
+  justify-content: space-around;
+  /* if elements are right next to eachother, they will have padding around them */
+}
+
+.model-card-button {
+  display: block;
+  width: 50px;
+  height: 50px;;
+  margin-top: 10px;
+}
+
+/* just fixing up the dimensions of her pic */
+.pennywise {
+  height: 470px;
+  width: 270px;
+}
+
+.model-cards {
+  border-bottom: dashed rgb(148, 0, 111);
+}
+
+/* for the dti stars */
+.rating {
+  border: none;
+  margin: 0 auto;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label:before {
+  content: '';
+  background: gold;
+  width: 40px;
+  height: 40px;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  align-self: center;
+}
+
+.rating label {
+  border: 2px solid gold;
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  width: 60px;
+  float: right;
+  margin: 5px;
+  background-color: rgb(255, 248, 225);
+  border-radius: 50%;
+}
+
+/* to make the light up hover on stars effect */
+.rating:not(:checked) label:hover,
+.rating:not(:checked) label:hover ~ label {
+  background-color: goldenrod !important;
+  cursor: pointer;
+}
+
+/* ~ is a sibling sign, so what im doing is only taking the sibling of the current element */
+.rating input:checked + label:hover,
+.rating label:hover ~ input:checked ~ label,
+.rating input:checked ~ label:hover ~ label {
+  background: goldenrod !important;
+  cursor: pointer;
+}
